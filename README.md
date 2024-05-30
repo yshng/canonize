@@ -35,4 +35,4 @@ Any number of policy sections, each having a heading, 0 or more subheadings, and
 
 ### Schedule 
 
-The schedule will list every meeting of the course by week and by day, each week containing 1 or more meeting days. Each meeting day will have associated with it a list of assignments to be completed in preparation for that day, or that students will be ready to start working on following class that day. (Meetings may be grouped in titled curricular units, sometimes with each week constituting a unit in and of itself. Each week has an optional title field.)
+The schedule will list every meeting of the course by week and by day, each week containing 1 or more meeting days. Each meeting day will have associated with it a list of assignments to be completed in preparation for that day, activities to be expected during class time, and/or assignments that students will be ready to start working on following class that day. (Meetings may be grouped in titled curricular units, sometimes with each week constituting a unit in and of itself. Each week has an optional title field.)
