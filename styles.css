@@ -1,0 +1,42 @@
+* {
+	padding: 0;
+	box-sizing: content-box;
+}
+
+body {
+	font-family: Mulish, sans-serif;
+	font-weight: 300;
+}
+
+main {
+	margin: 0 auto;
+	max-width: 640px;
+}
+
+
+div.single-space p {
+	margin: 0;
+}
+
+li {
+	margin-left: 25px;
+}
+
+.day {
+	margin-left: 25px;
+}
+
+.week-head, .day-head {
+	font-weight: 600;
+}
+
+.week-head {
+	color: #fff;
+	background-color: #008B8B;
+	padding: 5px;
+}
+
+
+.cw {
+	background-color: palegoldenrod;
+}
