@@ -1,4 +1,4 @@
-# syll
+# canonize
 syllabus generation, management, and more??
 
 ## Definition
