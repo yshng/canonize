@@ -3,14 +3,28 @@
 	box-sizing: content-box;
 }
 
+@media (min-width: 80em) {
+	html {
+	  font-size: 125%;
+	}
+}
+
+@media (min-width: 120em) {
+	html {
+	  font-size: 200%;
+	}
+}
+
 body {
-	font-family: Mulish, sans-serif;
+	font-family: system-ui, sans-serif;
 	font-weight: 300;
+	line-height: 1.5;
 }
 
 main {
 	margin: 0 auto;
-	max-width: 640px;
+	max-inline-size: 66ch;
+
 }
 
 
@@ -19,11 +33,11 @@ div.single-space p {
 }
 
 li {
-	margin-left: 25px;
+	margin-left: 1rem;
 }
 
 .day {
-	margin-left: 25px;
+	margin-left: 1rem;
 }
 
 .week-head, .day-head {
@@ -33,7 +47,7 @@ li {
 .week-head {
 	color: #fff;
 	background-color: #008B8B;
-	padding: 5px;
+	padding: .5rem;
 }
 
 
