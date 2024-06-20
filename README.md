@@ -14,7 +14,7 @@ to generate a SYLLABUS, we can specify:
 ### Meeting Pattern Information
 
 * Term (str), e.g. Fall, Spring, Michaelmas, etc.
-* Year (num)
+* Year (str) 
 * First meeting day (date)
 * Last meeting day (date)
 * Meeting days ([num]), the days of the week on which the course meets weekly, represented by the numbers 0-6
@@ -22,7 +22,7 @@ to generate a SYLLABUS, we can specify:
 * End time (time), when meetings end
 * Location (str), where meetings take place (optional)
 
-### Class Policies 
+### Class Policies [[str]]
 
 Any number of policy sections, each having a heading, 0 or more subheadings, and 1 or more paragraphs of text under each (sub)heading. Common sections include: 
 
