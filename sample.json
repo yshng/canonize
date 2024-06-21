@@ -28,8 +28,7 @@
             }]
         }
     ],
-    "schedule": {
-        "unit1": "Language as Social Action",
+    "schedule": [
         "week1": {
             "heading": "Introductions",
             "day1": {
@@ -131,5 +130,5 @@
                 "inClass": []
             }
         }
-    }
+    ]
 }
