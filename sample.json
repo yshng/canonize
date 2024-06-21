@@ -10,10 +10,23 @@
     "startTime": "10:30",
     "endTime": "11:50",
     "location": "SSRB 105",
-    "policies": [
-       ["Participation", "Students will reflect on their own participation skills at the beginning of the course, set and revise goals, and complete two short self-evaluations over the course of the quarter. At the end of the course, students will propose a letter grade for their own participation based on this process. Prompts and guides will be posted on Piazza."],
-       ["Attendance", "An _excused absence_ is any absence where you have communicated with me ahead of time. There is technically no formal limit on excused absences since we should be in communication about them and working things out together. In general, you do not have to give a reason for missing class - I trust that you are all adults and it is your business how you manage your time. However, if you will be missing an extended period of class, please be in touch so we can figure out together how to manage it.\n\n_Unexcused absences_ are when you are not in class and I am not expecting it. You can have two unexcused absences without it necessarily affecting your grade (you will presumably account for them in your own participation grading). Life happens. A third unexcused absence will lower the cap on your participation grade (i.e. you will be eligible for fewer total points toward participation). Any further unexcused absences will be cause for failing the class.\n\n I will track attendance and tardiness in order to provide this data for you as you work on your participation goals. It is ultimately up to you how it affects your participation grade, given your goals and plans for the quarter."],
-       ["Accessibility", ["Masking", "I will be wearing a mask during in-person classes, as I have a high-risk medical condition. It is also possible that other students and/or those they live with may also be particularly vulnerable to COVID infection. Per University guidelines, you cannot be required to wear a mask in class."]]
+    "policies": [{
+        "heading": "Participation",
+        "body": "Students will reflect on their own participation skills at the beginning of the course, set and revise goals, and complete two short self-evaluations over the course of the quarter. At the end of the course, students will propose a letter grade for their own participation based on this process. Prompts and guides will be posted on Piazza."
+        }, {
+        "heading": "Attendance",
+        "body": "An _excused absence_ is any absence where you have communicated with me ahead of time. There is technically no formal limit on excused absences since we should be in communication about them and working things out together. In general, you do not have to give a reason for missing class - I trust that you are all adults and it is your business how you manage your time. However, if you will be missing an extended period of class, please be in touch so we can figure out together how to manage it.\n\n_Unexcused absences_ are when you are not in class and I am not expecting it. You can have two unexcused absences without it necessarily affecting your grade (you will presumably account for them in your own participation grading). Life happens. A third unexcused absence will lower the cap on your participation grade (i.e. you will be eligible for fewer total points toward participation). Any further unexcused absences will be cause for failing the class.\n\n I will track attendance and tardiness in order to provide this data for you as you work on your participation goals. It is ultimately up to you how it affects your participation grade, given your goals and plans for the quarter."
+        }, {
+        "heading": "Accessibility",
+        "body": "",
+        "subpolicy": [{
+            "heading": "Masking",
+            "body": "I will be wearing a mask during in-person classes, as I have a high-risk medical condition. It is also possible that other students and/or those they live with may also be particularly vulnerable to COVID infection. Per University guidelines, you cannot be required to wear a mask in class."
+            }, {
+            "heading": "Remote/Asynchronous Learning",
+            "body": "I will be taking a case-by-case approach to figuring out asynchronous/remote options for students in need of accommodation, as best responds to their situation. Please email me if you find yourself in such a situation. These accommodations are not only helpful in cases of necessary isolation due to COVID exposure, but can be useful in numerous other situations. As such, I urge everyone to refrain from making judgments or assumptions about why any individual may be in need of accommodation. I will not answer any questions about why any students are attending class remotely or asynchronously."
+            }]
+        }
     ],
     "schedule": {
         "unit1": "Language as Social Action",
