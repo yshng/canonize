@@ -1,79 +1,133 @@
 {
     "courseTitle": "Linguistic Anthropology of Education",
     "instructor": "Shenghe Ye",
-    "courseDescription": "Long string of text.",
+    "courseDescription": "Students in this course will learn to think critically about the entangled roles of language and education in processes of sociocultural (re)production, that is, in how forms of social organization and collective meaning-making are produced and/or reproduced. Students will learn to analyze language use as a social activity: not merely as a code for referencing events in the world, but as a way of managing social relations. In reading about language in educational contexts, students will come to see how collectively held beliefs about language and language users inform moral, political, and often (de)racializing evaluations of better and worse ways of speaking, writing, teaching and learning, leading to differential educational opportunities, access, and outcomes. Education will be treated broadly, though there will be a focus on formal educational contexts. Nonetheless, the class will always challenge students to think about 'the classroom,' including our own, as continuous and contiguous with 'the real world.'",
     "termName": "Fall",
     "termYear": "2023",
-    "firstDay": "2023-09-29",
-    "lastDay": "2023-12-03",
+    "firstDay": "2023-03-20",
+    "lastDay": "2023-06-03",
     "meetingDays": [2,4],
     "startTime": "10:30",
     "endTime": "11:50",
     "location": "SSRB 105",
     "policies": [
-       ["heading", "body text"]
-       ["heading", "body text"]
-       ["heading", "body text" ["subheading", "body text"]]
+       ["Participation", "Students will reflect on their own participation skills at the beginning of the course, set and revise goals, and complete two short self-evaluations over the course of the quarter. At the end of the course, students will propose a letter grade for their own participation based on this process. Prompts and guides will be posted on Piazza."],
+       ["Attendance", "An _excused absence_ is any absence where you have communicated with me ahead of time. There is technically no formal limit on excused absences since we should be in communication about them and working things out together. In general, you do not have to give a reason for missing class - I trust that you are all adults and it is your business how you manage your time. However, if you will be missing an extended period of class, please be in touch so we can figure out together how to manage it.\n\n_Unexcused absences_ are when you are not in class and I am not expecting it. You can have two unexcused absences without it necessarily affecting your grade (you will presumably account for them in your own participation grading). Life happens. A third unexcused absence will lower the cap on your participation grade (i.e. you will be eligible for fewer total points toward participation). Any further unexcused absences will be cause for failing the class.\n\n I will track attendance and tardiness in order to provide this data for you as you work on your participation goals. It is ultimately up to you how it affects your participation grade, given your goals and plans for the quarter."],
+       ["Accessibility", ["Masking", "I will be wearing a mask during in-person classes, as I have a high-risk medical condition. It is also possible that other students and/or those they live with may also be particularly vulnerable to COVID infection. Per University guidelines, you cannot be required to wear a mask in class."]]
     ],
     "schedule": {
+        "unit1": "Language as Social Action",
         "week1": {
-            "heading": "optional header",
+            "heading": "Introductions",
             "day1": {
-                "heading": "optional header",
-                "reading": ["reference", "reference", "reference"],
-                "toDo": ["assignment", "assignment", "assignment"],
-                "inClass": ["activity","activity","activity"]
+                "heading": "",
+                "reading": [],
+                "toDo": [ {
+                    "assignment": "Make introductory post on Piazza",
+                    "dueDate": "2023-09-30"
+                    }],
+                "inClass": ["Introductory lecture","Course structure overview"]
             },
             "day2": {
-                "heading": "optional header",
-                "reading": ["reference", "reference", "reference"],
-                "toDo": ["assignment", "assignment", "assignment"],
-                "inClass": ["activity","activity","activity"]
+                "heading": "",
+                "reading": [{
+                    "biblio": "Lemke (1990), Talking Science",
+                    "pages": "Ch. 1",
+                    "location": "Library Reserves",
+                    "required": true
+                }],
+                "toDo": [],
+                "inClass": ["Discussion norms workshop"]
             }
         },
         "week2": {
-            "heading": "optional header",
+            "heading": "Communication, Community, and Social Identity",
             "day1": {
-                "heading": "optional header",
-                "reading": ["reference", "reference", "reference"],
-                "toDo": ["assignment", "assignment", "assignment"],
-                "inClass": ["activity","activity","activity"]
+                "heading": "",
+                "reading": [{
+                    "biblio": "Lave and Wenger (1991), Situated Learning",
+                    "pages": "Ch. 2",
+                    "location": "Library Reserves",
+                    "required": true
+                },{
+                    "biblio": "Chrisomalis (2015) \"What's so improper about fractions? Prescriptivism and language socialization at Math Corps\" Language in Society 44:63-85.",
+                    "pages": "",
+                    "location": "Online",
+                    "required": true
+                }
+                ],
+                "toDo": [],
+                "inClass": []
             },
             "day2": {
-                "heading": "optional header",
-                "reading": ["reference", "reference", "reference"],
-                "toDo": ["assignment", "assignment", "assignment"],
-                "inClass": ["activity","activity","activity"]
+                "heading": "",
+                "reading": [{
+                    "biblio": "Wortham (2004) \"The interdependence of social identification and learning.\" American Educational Research Journal 41(3):715-750.",
+                    "pages": "",
+                    "location": "Online",
+                    "required": true
+                },{
+                    "biblio": "Leone-Pizzaghella (2022) \"Displaying double-voiced expertise in a 'difficult' class\" Linguistics and education 72: 101033",
+                    "pages": "",
+                    "location": "Canvas",
+                    "required": true
+                },{
+                    "biblio": "Bucholtz et al (2011) \"Entextualized Humor in the Formation of Scientist Identities among U.S. Undergraduates.\" Anthropology and Education Quarterly 42(3):177—192",
+                    "pages": "",
+                    "location": "Online",
+                    "required": false
+                }],
+                "toDo": [],
+                "inClass": []
             }
         },
         "week3": {
-            "heading": "optional text",
+            "heading": "Talking Culture",
             "day1": {
-                "heading": "optional text",
-                "reading": ["reference", "reference", "reference"],
-                "toDo": ["assignment", "assignment", "assignment"],
-                "inClass": ["activity","activity","activity"]
+                "heading": "Indexicality and Enregisterment",
+                "reading": [{
+                    "biblio": "Johnstone et al (2006). \"Mobility, Indexicality, and the Enregisterment of 'Pittsburghese'\" Journal of English Linguistics 34(2):77-104",
+                    "pages": "",
+                    "location": "Online",
+                    "required": true
+                },{
+                    "biblio": "Reyes (2002) \"'Are you losing your culture?': poetics, indexicality and Asian American identity\" Discourse Studies 4:183—199.",
+                    "pages": "",
+                    "location": "Online",
+                    "required": true
+                },{
+                    "biblio": "Agha (2003) \"The Social Life of Cultural Value\" Language and Communication 23(3-4):231-273",
+                    "pages": "",
+                    "location": "Online",
+                    "required": false
+                }
+            ],
+                "toDo": [],
+                "inClass": []
             },
             "day2": {
-                "heading": "optional text",
-                "reading": ["reference", "reference", "reference"],
-                "toDo": ["assignment", "assignment", "assignment"],
-                "inClass": ["activity","activity","activity"]
-            }
-        },
-        "week4": {
-            "heading": "optional text",
-            "day1": {
-                "heading": "optional text",
-                "reading": ["reference", "reference", "reference"],
-                "toDo": ["assignment", "assignment", "assignment"],
-                "inClass": ["activity","activity","activity"]
-            },
-            "day2": {
-                "heading": "optional text",
-                "reading": ["reference", "reference", "reference"],
-                "toDo": ["assignment", "assignment", "assignment"],
-                "inClass": ["activity","activity","activity"]
+                "heading": "Indexing Race, Enregistering Culture",
+                "reading": [{
+                    "biblio": "Boas (1911) \"Race and Language\" in Handbook of American Indian Languages",
+                    "pages": "5—14",
+                    "location": "Library Reserves",
+                    "required": true
+                },{
+                    "biblio": "Ladson-Billings (2004) \"It's Not the Culture of Poverty, It's the Poverty of Culture.\" 2004 George and Louise Spindler Award Lecture.",
+                    "pages": "",
+                    "location": "Canvas",
+                    "required": true
+                },{
+                    "biblio": "Urcioli (2009) \"Talking/Not Talking about Race: The Enregisterments of Culture in Higher Education Discourses\" Journal of Linguistic Anthropology 19(1): 21—39.",
+                    "pages": "",
+                    "location": "Online",
+                    "required": true
+                }],
+                "toDo": [{
+                    "assignment": "Participation Check-in #1",
+                    "dueDate": "2023-04-06T23:59"
+                }],
+                "inClass": []
             }
         }
     }
