@@ -20,7 +20,6 @@
         "week1": {
             "heading": "Introductions",
             "day1": {
-                "heading": "",
                 "reading": [],
                 "toDo": [ {
                     "assignment": "Make introductory post on Piazza",
@@ -29,7 +28,6 @@
                 "inClass": ["Introductory lecture","Course structure overview"]
             },
             "day2": {
-                "heading": "",
                 "reading": [{
                     "biblio": "Lemke (1990), Talking Science",
                     "pages": "Ch. 1",
@@ -43,7 +41,6 @@
         "week2": {
             "heading": "Communication, Community, and Social Identity",
             "day1": {
-                "heading": "",
                 "reading": [{
                     "biblio": "Lave and Wenger (1991), Situated Learning",
                     "pages": "Ch. 2",
@@ -51,7 +48,6 @@
                     "required": true
                 },{
                     "biblio": "Chrisomalis (2015) \"What's so improper about fractions? Prescriptivism and language socialization at Math Corps\" Language in Society 44:63-85.",
-                    "pages": "",
                     "location": "Online",
                     "required": true
                 }
@@ -60,20 +56,16 @@
                 "inClass": []
             },
             "day2": {
-                "heading": "",
                 "reading": [{
                     "biblio": "Wortham (2004) \"The interdependence of social identification and learning.\" American Educational Research Journal 41(3):715-750.",
-                    "pages": "",
                     "location": "Online",
                     "required": true
                 },{
                     "biblio": "Leone-Pizzaghella (2022) \"Displaying double-voiced expertise in a 'difficult' class\" Linguistics and education 72: 101033",
-                    "pages": "",
                     "location": "Canvas",
                     "required": true
                 },{
                     "biblio": "Bucholtz et al (2011) \"Entextualized Humor in the Formation of Scientist Identities among U.S. Undergraduates.\" Anthropology and Education Quarterly 42(3):177—192",
-                    "pages": "",
                     "location": "Online",
                     "required": false
                 }],
@@ -87,12 +79,10 @@
                 "heading": "Indexicality and Enregisterment",
                 "reading": [{
                     "biblio": "Johnstone et al (2006). \"Mobility, Indexicality, and the Enregisterment of 'Pittsburghese'\" Journal of English Linguistics 34(2):77-104",
-                    "pages": "",
                     "location": "Online",
                     "required": true
                 },{
                     "biblio": "Reyes (2002) \"'Are you losing your culture?': poetics, indexicality and Asian American identity\" Discourse Studies 4:183—199.",
-                    "pages": "",
                     "location": "Online",
                     "required": true
                 },{
@@ -114,12 +104,10 @@
                     "required": true
                 },{
                     "biblio": "Ladson-Billings (2004) \"It's Not the Culture of Poverty, It's the Poverty of Culture.\" 2004 George and Louise Spindler Award Lecture.",
-                    "pages": "",
                     "location": "Canvas",
                     "required": true
                 },{
                     "biblio": "Urcioli (2009) \"Talking/Not Talking about Race: The Enregisterments of Culture in Higher Education Discourses\" Journal of Linguistic Anthropology 19(1): 21—39.",
-                    "pages": "",
                     "location": "Online",
                     "required": true
                 }],
