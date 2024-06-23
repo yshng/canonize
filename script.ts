@@ -1,3 +1,5 @@
+// Type Definitions
+
 interface Reading {
     biblio: string,             // full citation, 
     // biblio will probably get its own type later
@@ -43,7 +45,7 @@ interface Syllabus {
     termYear: string,
     firstDay: Date,
     lastDay: Date,
-    meetingDays: number[],
+    meetingDays: string[],
     startTime: Date,
     endTime: Date,
     location: string,
@@ -51,6 +53,7 @@ interface Syllabus {
     schedule: Week[]
 }
 
+// Generating HTML syllabus from JSON
 
 async function populate() {
     const requestURL =
@@ -65,20 +68,24 @@ async function populate() {
     //populateSchedule(syllabus);
   }
 
-  function populateHeader(obj: Syllabus) {
+  function populateHeader(syl: Syllabus) {
     const basicInfo = document.querySelector("#basic-info");
     if (basicInfo === null) {
         console.log("No div with ID basic-info")
     } else {
         const courseTitle = document.createElement("h1");
-        courseTitle.textContent = obj.courseTitle;
+        courseTitle.textContent = syl.courseTitle;
         basicInfo.appendChild(courseTitle);
 
         const meetingInfo = document.createElement("div");
         meetingInfo.classList.add("meeting-info");
+        
         const term = document.createElement("p");
-        term.textContent = obj.termName + " " + obj.termYear;
+        term.textContent = syl.termName + " " + syl.termYear;
         meetingInfo.appendChild(term);
+
+        const meetingDays = document.createElement("p");
+        meetingDays.textContent = syl.
     }
   }
 
