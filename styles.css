@@ -19,16 +19,11 @@ body {
 	font-family: system-ui, sans-serif;
 	font-weight: 300;
 	line-height: 1.5;
-}
-
-main {
 	margin: 0 auto;
 	max-inline-size: 66ch;
-
 }
 
-
-div.single-space p {
+.meeting-info p {
 	margin: 0;
 }
 
