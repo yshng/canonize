@@ -56,15 +56,14 @@ interface Syllabus {
 // Generating HTML syllabus from JSON
 
 async function populate() {
-    const requestURL =
-      "https://yshng.github.io/canonize/sample.json";
+    const requestURL = "https://yshng.github.io/canonize/sample.json";
     const request = new Request(requestURL);
   
     const response = await fetch(request);
     const syllabus = await response.json();
     
     populateHeader(syllabus);
-    //populatePolicies(syllabus);
+    populatePolicies(syllabus);
     //populateSchedule(syllabus);
   }
 
@@ -85,7 +84,48 @@ async function populate() {
         meetingInfo.appendChild(term);
 
         const meetingDays = document.createElement("p");
-        meetingDays.textContent = syl.
+        meetingDays.textContent = syl.meetingDays.join(" and ");
+        meetingDays.textContent += ", " + syl.startTime + "–" + syl.endTime;
+        meetingInfo.appendChild(meetingDays);
+
+        const location = document.createElement("p");
+        location.textContent = syl.location;
+        meetingInfo.appendChild(location);
+
+        basicInfo.appendChild(meetingInfo);
+
+        const courseDescriptionHead = document.createElement("h2");
+        courseDescriptionHead.textContent = "Course Description";
+        const courseDescription = document.createElement("p");
+        courseDescription.textContent = syl.courseDescription;
+        basicInfo.appendChild(courseDescriptionHead);
+        basicInfo.appendChild(courseDescription);
+    }
+  }
+
+  function populatePolicies(syl: Syllabus) {
+    const container = document.querySelector("main");
+    if (container !== null) {
+    syl.policies.forEach( (policy) => { 
+        generatePolicy(policy, container, 2);
+        })
+    }
+  }
+
+  function generatePolicy(pol: Policy, parent: Element, hlevel: number) {
+    const policy = document.createElement("div");
+
+    const Head = document.createElement(`h${hlevel}`);
+    Head.textContent = pol.heading;
+    const Body = document.createElement("p");
+    Body.textContent = pol.body;
+    policy.appendChild(Head);
+    policy.appendChild(Body);
+    parent.appendChild(policy);
+
+    if (pol.hasOwnProperty("subpolicy") && pol.subpolicy !== undefined) {
+        hlevel++;
+        pol.subpolicy.forEach((subpolicy) => generatePolicy(subpolicy, policy, hlevel));
     }
   }
 
