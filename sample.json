@@ -29,8 +29,7 @@
         }
     ],
     "schedule": [
-        "week1": {
-            "heading": "Introductions",
+        {   "heading": "Introductions",
             "day1": {
                 "reading": [],
                 "toDo": [ {
@@ -50,8 +49,7 @@
                 "inClass": ["Discussion norms workshop"]
             }
         },
-        "week2": {
-            "heading": "Communication, Community, and Social Identity",
+        {   "heading": "Communication, Community, and Social Identity",
             "day1": {
                 "reading": [{
                     "biblio": "Lave and Wenger (1991), Situated Learning",
@@ -85,8 +83,7 @@
                 "inClass": []
             }
         },
-        "week3": {
-            "heading": "Talking Culture",
+        {   "heading": "Talking Culture",
             "day1": {
                 "heading": "Indexicality and Enregisterment",
                 "reading": [{
