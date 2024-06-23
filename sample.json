@@ -6,7 +6,7 @@
     "termYear": "2023",
     "firstDay": "2023-03-20",
     "lastDay": "2023-06-03",
-    "meetingDays": ["Tuesday","Thursday"],
+    "meetingDays": ["Tuesdays","Thursdays"],
     "startTime": "10:30",
     "endTime": "11:50",
     "location": "SSRB 105",
