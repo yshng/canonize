@@ -63,16 +63,20 @@ async function populate() {
   }
 
   function populateHeader(syl: Syllabus) {
-    const basicInfo = document.querySelector("#basic-info");
-    if (basicInfo === null) {
-        console.log("No div with ID basic-info")
+    const header = document.querySelector("header");
+    if (header === null) {
+        console.log("No header div");
     } else {
         const courseTitle = document.createElement("h1");
         courseTitle.textContent = syl.courseTitle;
-        basicInfo.appendChild(courseTitle);
+        header.appendChild(courseTitle);
 
         const meetingInfo = document.createElement("div");
         meetingInfo.classList.add("meeting-info");
+
+        const instructor = document.createElement("p");
+        instructor.textContent = syl.instructor;
+        meetingInfo.appendChild(instructor);
         
         const term = document.createElement("p");
         term.textContent = syl.termName + " " + syl.termYear;
@@ -87,14 +91,14 @@ async function populate() {
         location.textContent = syl.location;
         meetingInfo.appendChild(location);
 
-        basicInfo.appendChild(meetingInfo);
+        header.appendChild(meetingInfo);
 
         const courseDescriptionHead = document.createElement("h2");
         courseDescriptionHead.textContent = "Course Description";
         const courseDescription = document.createElement("p");
         courseDescription.textContent = syl.courseDescription;
-        basicInfo.appendChild(courseDescriptionHead);
-        basicInfo.appendChild(courseDescription);
+        header.appendChild(courseDescriptionHead);
+        header.appendChild(courseDescription);
     }
   }
 
@@ -155,25 +159,31 @@ async function populate() {
         weekDiv.classList.add("week");
         weekDiv.setAttribute("id",`week${weekCount}`);
 
-        if (week.hasOwnProperty("weekHead")) {
-            const weekHead = document.createElement("p");
-            weekHead.textContent = `Week ${weekCount}: ` + week.weekHead;
-            parent.appendChild(weekHead);
-        }
+        const weekHead = document.createElement("p");
+        weekHead.classList.add("week-head");
+        weekHead.textContent = `Week ${weekCount}`;
 
-        // generateDays(week,weekdiv);
+        if (week.hasOwnProperty("weekHead")) {
+            weekHead.textContent += `: ${week.weekHead}`;
+        }
+        weekDiv.appendChild(weekHead);
+        generateDays(week,weekDiv);
+        parent.append(weekDiv);
 
     })
   }
 
 
 function generateDays(week: Week, parent: Element) {
+    let dayCount = 0;
     week.days.forEach( (day) => {
+        dayCount++;
         const head = document.createElement("p");
         head.classList.add("day-head");
         // const date = meetingDates.shift();
         // head.textContent = date;
-        if (day.hasOwnProperty("dayhead")) {
+        head.textContent = `Day ${dayCount}`;
+        if (day.hasOwnProperty("dayHead")) {
             head.textContent += ": " + day.dayHead;   
         }
         parent.appendChild(head);
@@ -189,14 +199,45 @@ function generateDays(week: Week, parent: Element) {
 }
 
 function generateReading(day: Day, parent: Element) {
-
+    day.reading.forEach( (reading) => {
+        const li = document.createElement("li");
+        li.classList.add("read");
+        if (reading.required) {li.classList.add("required");}
+        li.textContent = reading.biblio;
+        if(reading.hasOwnProperty("pages")) {
+            li.textContent += ", " + reading.pages;
+        }
+        if(reading.hasOwnProperty("location")) {
+            li.textContent += ` [${reading.location}]`;
+        }
+        parent.appendChild(li);
+    })
 }
 
 function generateToDo(day: Day, parent: Element) {
+    day.toDo.forEach ( (todo) => {
+        const li = document.createElement("li");
+        li.classList.add("do");
+        li.textContent = todo.assignment + " ";
+        const due = document.createElement("span");
+        due.classList.add("due-date");
+        const dueDate = new Date(todo.dueDate);
+        due.textContent = `Due: ${dueDate.toLocaleString()}`;
+        li.appendChild(due);
+        parent.appendChild(li);
+        
+    })
 
 }
 
 function generateInClass(day: Day, parent: Element) {
+    day.inClass.forEach ( (activity) => {
+        const li = document.createElement("li");
+        li.classList.add("in-class");
+        li.textContent = activity;
+        parent.appendChild(li);
+    })
+
 
 }
 
