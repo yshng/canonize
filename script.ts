@@ -14,14 +14,15 @@ interface ToDo {
 }
 
 interface Day {
-    heading?: string,
+    dayHead?: string,
     reading: Reading[],
     toDo: ToDo[],
     inClass: string[]
 }
 
 interface Week {
-    heading?: string,
+    unitHead?: string,
+    weekHead?: string,
     day1: Day,
     day2?: Day,
     day3?: Day,
@@ -103,18 +104,20 @@ async function populate() {
     }
   }
 
+  const container = document.querySelector("main");
+
   function populatePolicies(syl: Syllabus) {
-    const container = document.querySelector("main");
-    if (container !== null) {
+    const policies = document.createElement("div");
+    policies.setAttribute("id","policies");
     syl.policies.forEach( (policy) => { 
-        generatePolicy(policy, container, 2);
+        generatePolicy(policy, policies, 2);
         })
-    }
+    container?.appendChild(policies);
+    
   }
 
   function generatePolicy(pol: Policy, parent: Element, hlevel: number) {
     const policy = document.createElement("div");
-
     const Head = document.createElement(`h${hlevel}`);
     Head.textContent = pol.heading;
     const Body = document.createElement("p");
@@ -128,5 +131,6 @@ async function populate() {
         pol.subpolicy.forEach((subpolicy) => generatePolicy(subpolicy, policy, hlevel));
     }
   }
+ 
 
   populate();

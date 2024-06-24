@@ -29,7 +29,8 @@
         }
     ],
     "schedule": [
-        {   "heading": "Introductions",
+        {   "unitHead": "Language as Social Action",
+            "weekHead": "Introductions",
             "day1": {
                 "reading": [],
                 "toDo": [ {
@@ -49,7 +50,7 @@
                 "inClass": ["Discussion norms workshop"]
             }
         },
-        {   "heading": "Communication, Community, and Social Identity",
+        {   "weekHead": "Communication, Community, and Social Identity",
             "day1": {
                 "reading": [{
                     "biblio": "Lave and Wenger (1991), Situated Learning",
@@ -83,9 +84,9 @@
                 "inClass": []
             }
         },
-        {   "heading": "Talking Culture",
+        {   "weekHead": "Talking Culture",
             "day1": {
-                "heading": "Indexicality and Enregisterment",
+                "dayHead": "Indexicality and Enregisterment",
                 "reading": [{
                     "biblio": "Johnstone et al (2006). \"Mobility, Indexicality, and the Enregisterment of 'Pittsburghese'\" Journal of English Linguistics 34(2):77-104",
                     "location": "Online",
@@ -105,7 +106,7 @@
                 "inClass": []
             },
             "day2": {
-                "heading": "Indexing Race, Enregistering Culture",
+                "dayHead": "Indexing Race, Enregistering Culture",
                 "reading": [{
                     "biblio": "Boas (1911) \"Race and Language\" in Handbook of American Indian Languages",
                     "pages": "5—14",

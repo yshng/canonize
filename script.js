@@ -51,17 +51,17 @@ function populateHeader(syl) {
         basicInfo.appendChild(courseDescription);
     }
 }
+const container = document.querySelector("main");
 function populatePolicies(syl) {
-    const container = document.querySelector("main");
-    if (container !== null) {
-        syl.policies.forEach((policy) => {
-            generatePolicy(policy, container, 2);
-        });
-    }
+    const policies = document.createElement("div");
+    policies.setAttribute("id", "policies");
+    syl.policies.forEach((policy) => {
+        generatePolicy(policy, policies, 2);
+    });
+    container === null || container === void 0 ? void 0 : container.appendChild(policies);
 }
 function generatePolicy(pol, parent, hlevel) {
     const policy = document.createElement("div");
-    policy.classList.add("policy");
     const Head = document.createElement(`h${hlevel}`);
     Head.textContent = pol.heading;
     const Body = document.createElement("p");
