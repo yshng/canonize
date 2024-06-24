@@ -23,13 +23,7 @@ interface Day {
 interface Week {
     unitHead?: string,
     weekHead?: string,
-    day1: Day,
-    day2?: Day,
-    day3?: Day,
-    day4?: Day,
-    day5?: Day,
-    day6?: Day,
-    day7?: Day
+    days: day[]
 }
 
 interface Policy {

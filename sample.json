@@ -31,7 +31,7 @@
     "schedule": [
         {   "unitHead": "Language as Social Action",
             "weekHead": "Introductions",
-            "day1": {
+            "days": [{
                 "reading": [],
                 "toDo": [ {
                     "assignment": "Make introductory post on Piazza",
@@ -39,7 +39,7 @@
                     }],
                 "inClass": ["Introductory lecture","Course structure overview"]
             },
-            "day2": {
+            {
                 "reading": [{
                     "biblio": "Lemke (1990), Talking Science",
                     "pages": "Ch. 1",
@@ -48,10 +48,10 @@
                 }],
                 "toDo": [],
                 "inClass": ["Discussion norms workshop"]
-            }
+            }]
         },
         {   "weekHead": "Communication, Community, and Social Identity",
-            "day1": {
+            "days": [{
                 "reading": [{
                     "biblio": "Lave and Wenger (1991), Situated Learning",
                     "pages": "Ch. 2",
@@ -65,8 +65,7 @@
                 ],
                 "toDo": [],
                 "inClass": []
-            },
-            "day2": {
+            },{
                 "reading": [{
                     "biblio": "Wortham (2004) \"The interdependence of social identification and learning.\" American Educational Research Journal 41(3):715-750.",
                     "location": "Online",
@@ -82,10 +81,10 @@
                 }],
                 "toDo": [],
                 "inClass": []
-            }
+            }]
         },
         {   "weekHead": "Talking Culture",
-            "day1": {
+            "days": [{
                 "dayHead": "Indexicality and Enregisterment",
                 "reading": [{
                     "biblio": "Johnstone et al (2006). \"Mobility, Indexicality, and the Enregisterment of 'Pittsburghese'\" Journal of English Linguistics 34(2):77-104",
@@ -104,8 +103,7 @@
             ],
                 "toDo": [],
                 "inClass": []
-            },
-            "day2": {
+            },{   
                 "dayHead": "Indexing Race, Enregistering Culture",
                 "reading": [{
                     "biblio": "Boas (1911) \"Race and Language\" in Handbook of American Indian Languages",
@@ -126,7 +124,7 @@
                     "dueDate": "2023-04-06T23:59"
                 }],
                 "inClass": []
-            }
+            }]
         }
     ]
 }
