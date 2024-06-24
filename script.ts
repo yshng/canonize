@@ -65,7 +65,7 @@ async function populate() {
     
     populateHeader(syllabus);
     populatePolicies(syllabus);
-    //populateSchedule(syllabus);
+    populateSchedule(syllabus);
   }
 
   function populateHeader(syl: Syllabus) {
@@ -131,6 +131,43 @@ async function populate() {
         pol.subpolicy.forEach((subpolicy) => generatePolicy(subpolicy, policy, hlevel));
     }
   }
- 
+
+  function populateSchedule(syl: Syllabus) {
+    const schedule = document.createElement("div");
+    schedule.setAttribute("id","schedule");
+    const head = document.createElement("h2");
+    head.textContent = "Schedule";
+    schedule.appendChild(head);
+    generateWeeks(syl,schedule);
+    container?.appendChild(schedule);
+  }
+
+  function generateWeeks(syl: Syllabus, parent: Element) {
+
+    let unitCount = 0;
+    let weekCount = 0;
+    syl.schedule.forEach( (week) => {
+
+        if (week.hasOwnProperty("unitHead")){
+            unitCount++;
+            const unitHead = document.createElement("h3");
+            unitHead.textContent = `Part ${unitCount}: ` + week.unitHead;
+            parent.appendChild(unitHead);
+        }
+
+        weekCount++;
+
+        const weekDiv = document.createElement("div");
+        weekDiv.classList.add("week");
+        weekDiv.setAttribute("id",`week${weekCount}`);
+
+        if (week.hasOwnProperty("weekHead")) {
+            const weekHead = document.createElement("p");
+            weekHead.textContent = `Week ${weekCount}: ` + week.weekHead;
+            parent.appendChild(weekHead);
+        }
+
+    })
+  }
 
   populate();
