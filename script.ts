@@ -23,7 +23,7 @@ interface Day {
 interface Week {
     unitHead?: string,
     weekHead?: string,
-    days: day[]
+    days: Day[]
 }
 
 interface Policy {
@@ -161,7 +161,46 @@ async function populate() {
             parent.appendChild(weekHead);
         }
 
+        // generateDays(week,weekdiv);
+
     })
   }
+
+
+function generateDays(week: Week, parent: Element) {
+    week.days.forEach( (day) => {
+        const head = document.createElement("p");
+        head.classList.add("day-head");
+        // const date = meetingDates.shift();
+        // head.textContent = date;
+        if (day.hasOwnProperty("dayhead")) {
+            head.textContent += ": " + day.dayHead;   
+        }
+        parent.appendChild(head);
+
+        const assignList = document.createElement("ul");
+        assignList.classList.add("assign");
+        generateReading(day,assignList);
+        generateToDo(day,assignList);
+        generateInClass(day,assignList);
+        parent.appendChild(assignList);
+        
+    })
+}
+
+function generateReading(day: Day, parent: Element) {
+
+}
+
+function generateToDo(day: Day, parent: Element) {
+
+}
+
+function generateInClass(day: Day, parent: Element) {
+
+}
+
+// create an array of the meeting dates from the beginning to end of term
+// function generateDates(start: Date,end: Date, meetings: string[]): Date[] {}
 
   populate();
