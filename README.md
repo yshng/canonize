@@ -22,9 +22,9 @@ to generate a SYLLABUS, we can specify:
 * End time (time), when meetings end
 * Location (str), where meetings take place (optional)
 
-### Class Policies [[str]]
+### Class Policies (Policy[])
 
-Any number of policy sections, each having a heading, 0 or more subheadings, and 1 or more paragraphs of text under each (sub)heading. Common sections include: 
+Any number of policy sections, each having a heading, 1 or more paragraphs of body text under each heading, and 0 or more sub-policy sections, defined recursively. Common sections include: 
 
 * Attendance and Participation
 * Technology Use
@@ -33,6 +33,6 @@ Any number of policy sections, each having a heading, 0 or more subheadings, and
 * Grading Rubric
 * Assignments
 
-### Schedule 
+### Schedule (Week[])
 
-The schedule will list every meeting of the course by week and by day, each week containing 1 or more meeting days. Each meeting day will have associated with it a list of assignments to be completed in preparation for that day, activities to be expected during class time, and/or assignments that students will be ready to start working on following class that day. (Meetings may be grouped in titled curricular units, sometimes with each week constituting a unit in and of itself. Each week has an optional title field.)
+The schedule will list every meeting of the course by week. Each week will have an optional unit heading, optional week heading, and array of days. Each meeting day will have associated with it a list of readings to be completed in preparation for that day, a list of activities to be expected during class time, and/or a list of assignments, each with an associated due date. Each day will also have an optional heading field, and an optional unit heading field, for units beginning mid-week. 
