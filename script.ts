@@ -176,8 +176,18 @@ async function populate() {
 
 
 function generateDays(week: Week, parent: Element) {
+
+    
     let dayCount = 0;
     week.days.forEach( (day) => {
+        
+        if (day.hasOwnProperty("unitHead")){
+            unitCount++;
+            const unitHead = document.createElement("h3");
+            unitHead.textContent = `Part ${unitCount}: ` + week.unitHead;
+            parent.appendChild(unitHead);
+        }
+        
         dayCount++;
         const head = document.createElement("p");
         head.classList.add("day-head");
