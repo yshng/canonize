@@ -14,6 +14,7 @@ interface ToDo {
 }
 
 interface Day {
+    unitHead?: string,
     dayHead?: string,
     reading: Reading[],
     toDo: ToDo[],
